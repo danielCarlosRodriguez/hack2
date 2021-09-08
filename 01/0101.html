@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
+
+
+    <title>Clase 1 | Ejercicio 1</title>
+  </head>
+
+  <script>
+
+
+
+    const aRemplazar = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"];
+
+    const removerVocales = (palabra) => {
+      let arrayDePalabra = [...palabra];
+
+      let nueva2 = palabra;
+
+      for (let i = 0; i < arrayDePalabra.length; i++) {
+        const element = arrayDePalabra[i];
+
+        for (let i = 0; i < aRemplazar.length; i++) {
+          let element2 = aRemplazar[i];
+
+          if (element == element2) {
+            nueva2 = nueva2.replace(element, "");
+          }
+        }
+      }
+      console.log(nueva2);
+    };
+
+
+    removerVocales("Hola");
+    removerVocales("Hola Mundo");
+    removerVocales("Hola URUGUAY");
+
+
+
+  </script>
+
+  <body>
+    <h1>Clase 1 | Ejercicio 1</h1>
+  </body>
+</html>
